@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@1,700&display=swap');
+@media screen and (max-width: 1023px) {
+
+    :root {
+        --teksti: #333333;
+        --tausta: #f6e1f8;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        font-family: 'Poppins', 'sans-serif';
+        background-color: var(--tausta);
+        color: var(--teksti);
+    }
+
+    main {
+        flex-grow: 1;
+        padding: 5px;
+    }
+
+    .btn-primary {
+        background-color: white;
+        border-color: var(--teksti);
+        color: var(--teksti);
+    }
+
+    .btn-primary:hover {
+        background-color: var(--tausta);
+        border-color: var(--teksti);
+        color: var(--teksti)
+    }
+
+    .btn-primary:active {
+        background-color: lightgray !important;
+        border-color: var(--teksti) !important;
+        color: var(--tausta) !important;
+    }
+
+    .pelialue {
+        background-color: white;
+        border-color: lightgray;
+        border-style: outset;
+        border-width: 4px;
+        text-align: center;
+        width: 95vw;
+        padding: 2px;
+    }
+
+    .aloitus {
+        background-color: white;
+        border-color: lightgray;
+        border-style: outset;
+        border-width: 4px;
+        text-align: center;
+        width: 90vw;
+        padding: 2px;
+    }
+
+    .pisteKoko {
+        font-size: 14px;
+    }
+
+    .desktopPelaajat {
+        display: none;
+    }
+
+    .desktopMuuPiste {
+        display: none;
+    }
+
+    .desktopPistemaara {
+        display: none;
+    }
+
+    .row {
+        padding: 2px;
+    }
+
+    header {
+        display: none;
+    }
+
+    footer {
+        display: none;
+    }
+
+    @keyframes moveUp {
+        0% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-50px);
+        }
+        100% {
+            transform: translateY(-100px);
+            opacity: 0;
+        }
+    }
+    
+    #ohjeLaatikko {
+        max-height: 400px;
+        overflow-y: auto;
+        border-style: solid;
+        border-width: 5px;
+        border-color: navy;
+        position: fixed;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 95%;
+        background-color: lightskyblue;
+        padding: 5px;
+        text-align: left;
+        display: none;
+    }
+
+    #peliLaatikko {
+        max-height: 400px;
+        overflow-y: auto;
+        border-style: solid;
+        border-width: 5px;
+        border-color: navy;
+        position: fixed;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 85%;
+        background-color: lightskyblue;
+        padding: 5px;
+        text-align: left;
+        display: none;
+    }
+    
+    #ohjeLaatikko #sulje {
+        cursor: pointer;
+        float: right;
+        font-weight: bold;
+        width: 20px;
+        height: 20px;
+    }
+
+    .fontti {
+        background: linear-gradient(to right, indigo, blue, green, orange, red);
+        -webkit-background-clip: text;
+        font-family: 'Comic Neue';
+        font-weight: bolder;
+        background-clip: text;
+        color: transparent;
+    } 
+
+    .pelaajaFontti {
+        font-size: 16px;
+    }
+
+    .pelaajaNimi {
+        width: 80%;
+    }
+
+    .keskitaMobiili {
+        text-align: center;
+    }
+
+    ::-webkit-scrollbar {
+        width: 6px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background-color: navy;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background-color: lightskyblue
+    }
+}

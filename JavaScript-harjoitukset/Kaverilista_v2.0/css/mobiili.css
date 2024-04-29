@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@media screen and (max-width: 1023px) {
+
+    :root {
+        --teksti: #333333;
+        --tausta: #f6e1f8;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        font-family: 'Poppins', 'sans-serif';
+        background-color: var(--tausta);
+        color: var(--teksti);
+    }
+
+    main {
+        flex-grow: 1;
+        padding: 20px;
+    }
+
+    header {
+        display: none;
+    }
+
+    footer {
+        display: none;
+    }
+
+    .btn-primary {
+        background-color: white;
+        border-color: var(--teksti);
+        color: var(--teksti);
+    }
+
+    .btn-primary:active {
+        background-color: lightgray !important;
+        border-color: var(--teksti) !important;
+        color: var(--tausta) !important;
+    }
+
+    .varjo {
+        max-width: 100% !important;
+    }
+
+    .kaverilaatikko {
+        margin-top: 15%;
+        background-color: white;
+        width: auto;
+        max-width: 100%;
+        height: auto;
+        text-align: center;
+        border-style: solid;
+        border-width: 4px;
+        border-color: rgb(250, 228, 232);
+    }
+
+    .kaverilaatikko h3 {
+        text-align: center !important;
+    }
+
+    .tekstikentta {
+        margin-right: auto !important;
+    }
+
+    .teksti {
+        margin-top: 30%;
+        width: 100%;
+        align-self: left;
+    }
+
+    .container {
+        max-width: 90vw;
+    }
+}      

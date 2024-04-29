@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@1,700&display=swap');
+@media screen and (min-width: 1024px) {
+
+
+/*     PÄÄMUOTOILUT     */
+
+    :root {
+        --teksti: #333333;
+        --tausta: #f6e1f8;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        font-family: 'Poppins', 'sans-serif';
+        background-color: var(--tausta);
+        color: var(--teksti);
+    }
+
+    main {
+        flex-grow: 1;
+        padding: 20px;
+    }
+
+
+
+
+                    /*     HEADER, FOOTER ym. MUOTOILUT     */
+
+    .btn-primary {
+        background-color: white;
+        border-color: var(--teksti);
+        color: var(--teksti);
+    }
+
+
+    .btn-primary:hover {
+        background-color: var(--tausta);
+        border-color: var(--teksti);
+        color: var(--teksti)
+    }
+
+
+    .btn-primary:active {
+        background-color: lightgray !important;
+        border-color: var(--teksti) !important;
+        color: var(--tausta) !important;
+    }
+
+    .header-mobile {
+        display: none;
+    }
+
+
+    .footer-mobiili {
+        display: none;
+    }
+
+
+
+
+/*     PELIALUEEN POHJAMUOTOILUT     */
+
+    canvas {
+        margin: auto;
+        margin-top: 3vh;
+        display: flex;
+        justify-content: center;
+        box-shadow: 30px 30px 10px rgba(0, 0, 0, 0.4);
+        border: 8px outset lightgray;
+        align-items: center;
+        background-color: white;
+    }
+}

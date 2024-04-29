@@ -1,0 +1,96 @@
+    /*     OTSIKOT JA TEKSTIT     */
+
+
+
+    h1 {
+        font-weight: bold;
+    }
+
+    .text-bg-dark {
+        width: 100%;
+    }
+
+
+
+    /*     ALUEET     */
+
+
+
+    .varjo {
+        box-shadow: 30px 30px 10px rgba(0, 0, 0, 0.4);
+    }
+
+    .kaverilaatikko {
+        margin: -1%;
+        background-color: white;
+        width: 20vw;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        border-style: outset;
+        border-width: 8px;
+        border-color: rgb(250, 228, 232);
+    }
+
+    .ankeaputka {
+        border-style: outset;
+        border-width: 8px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .laatikko {
+        margin: 1%;
+    }
+
+    .row {
+        text-align: left;
+    }
+
+    .simo {
+        border-style: outset;
+        border-width: 8px;
+        float: right;
+    }
+
+    .simo-mobiili {
+        display: none;
+    }
+
+    ul.ajoneuvokoulutukset {
+        list-style-type: square;
+        font-size: large;
+        margin-left: 100px;
+    }
+
+
+
+    /*     LISÄMUOTOILUT     */
+
+
+
+    .horizontal-align {
+        margin-top: 5px;
+    }
+
+    .numerointi {
+        order: 1;
+        margin-left: 1vw;
+    }
+
+
+
+    /*     SIVUKOHTAISET     */
+
+
+
+    .simo img:hover {
+        float: right;
+        width: 200px;
+        box-shadow: 30px 30px 10px rgba(0, 0, 0, 0.4);
+    }
+
+    .nimi {
+        order: 2;
+    }

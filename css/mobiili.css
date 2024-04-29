@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@media screen and (max-width: 1023px) {
+
+    :root {
+        --teksti: #333333;
+        --tausta: #f6e1f8;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        font-family: 'Poppins', 'sans-serif';
+        background-color: var(--tausta);
+        color: var(--teksti);
+    }
+
+    main {
+        flex-grow: 1;
+        padding: 20px;
+    }
+
+    h1 {
+        font-weight: bold;
+    }
+
+    h2 {
+        margin: 5%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    h3 {
+        text-align: left;
+    }
+
+    footer {
+        display: none;
+    }
+
+    .btn-primary {
+        background-color: white;
+        border-color: var(--teksti);
+    }
+
+    .btn-secondary {
+        border: none;
+        background-color: var(--tausta);
+    }
+
+    .laatikko {
+        margin-top: 25vh;
+    }
+
+    .container {
+        font-size: small;
+        text-align: justify;
+    }
+
+    .row {
+        text-align: left;
+    }
+
+    .simo {
+        display: none;
+    }
+
+    .col-3 {
+        width: 100%;
+        pointer-events: none !important;
+    }
+
+    .col-12 {
+        width: 100%;
+        margin-left: -28px !important;
+        text-align: justify !important;
+    }
+
+    .col-12 p {
+        font-size: 14px !important;
+    }
+
+    .col-4 {
+        width: 100%;
+        text-align: justify !important;
+    }
+
+    .col-4 p {
+        font-size: 14px !important;
+        align-items: center;
+    }
+
+    .col-8 {
+        width: 100%;
+    }
+
+    .teksti {
+        width: 100%;
+        margin-top: 10px !important;
+        margin-left: 0 !important;
+        text-align: justify !important;
+        font-size: 14px !important;
+    }
+
+    .otsikko p {
+        margin: 0;
+        padding: 0;
+    }
+
+    .col-6 {
+        width: 100vw;
+    }
+
+    .col-5 {
+        width: 100%;
+    }
+
+    .col .varjo {
+        display: none;
+    }
+
+    .tokatoosa {
+        margin-top: -24vh;
+    }
+
+    ul.duunit {
+        margin-left: -6vw !important;
+        width: 100%;
+        text-align: left !important;
+        font-size: 14px !important;
+    }
+
+    ul.koulutukset {
+        list-style-type: square;
+        font-size: 14px;
+        text-align: left !important;
+    }
+
+    .cv {
+        display: none;
+    }
+
+    .liitin img {
+        width: 100%;
+    }
+
+    .puhelin img {
+        width: 100%;
+        height: auto;
+        pointer-events: none;
+    }
+
+    .varjo {
+        max-width: 100% !important;
+    }
+
+    .video {
+        width: 100% !important;
+        max-width: 100% !important;
+        height: auto !important;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .koodi img {
+        width: 100%;
+        height: auto;
+        margin: 0 !important;
+    }
+
+    .horizontal-align {
+        margin-top: 5px;
+    }
+
+    .ankeaputka {
+        border-style: inset;
+        border-width: 2px;
+        pointer-events: none;
+        margin-left: 8vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 60vw;
+    }
+
+    .simo-mobiili {
+        border-style: outset;
+        border-width: 2px;
+        pointer-events: none;
+        margin-top: -26vh;
+        position: relative;
+        display: flex;
+        align-self: center;
+        justify-content: center;
+        align-items: center;
+        width: 184px;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .p-3 {
+      display: none;
+    }
+
+    .raja {
+        margin-bottom: 20px;
+    }
+
+    .kaverilaatikko {
+        background-color: white;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+        height: auto;
+        text-align: center;
+        border-style: solid;
+        border-width: 4px;
+        border-color: rgb(250, 228, 232);
+    }
+
+    .kaverilaatikko h3 {
+        text-align: center !important;
+    }
+
+    .mobiiliteksti {
+        margin-left: auto !important;
+        margin-right: auto !important;
+        width: 76vw;
+        font-size: smaller;
+        text-align: center;
+    }
+        
+    .numerointi {
+        order: 1;
+        margin-left: 1vw;
+    }
+
+    .nimi {
+        order: 2;
+    }
+
+    .tekstikentta {
+        max-width: 100%;
+        margin-left: 15% !important;
+        margin-right: auto !important;
+    }
+
+    canvas {
+        margin-top: -6vh;
+        margin-left: -3vw;
+        width: 80vw;
+        height: 46vh;
+    }
+}      

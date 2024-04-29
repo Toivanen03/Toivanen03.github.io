@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@1,700&display=swap');
+@media screen and (max-width: 1023px) and (orientation: portrait) {
+
+    :root {
+        --teksti: #333333;
+        --tausta: #f6e1f8;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        font-family: 'Poppins', 'sans-serif';
+        background-color: var(--tausta);
+        color: var(--teksti);
+    }
+
+    .btn-primary {
+        background-color: white;
+        border-color: var(--teksti);
+        color: var(--teksti);
+    }
+
+    .btn-primary:active {
+        background-color: lightgray !important;
+        border-color: var(--teksti) !important;
+        color: var(--tausta) !important;
+    }
+
+    main {
+        flex-grow: 1;
+        padding: 2px;
+    }
+
+    header {
+        display: none;
+    }
+
+    footer {
+        display: none;
+    }
+
+    .footer-mobiili {
+        position: fixed;
+        bottom: 0;
+    }
+}
+
+
+
+
+@media screen and (max-width: 1023px) and (orientation: landscape) {
+
+                    /*     PÄÄMUOTOILUT     */
+
+:root {
+    --teksti: #333333;
+    --tausta: #f6e1f8;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Poppins', 'sans-serif';
+    background-color: var(--tausta);
+    color: var(--teksti);
+}
+
+main {
+    flex-grow: 1;
+    padding: 2px;
+}
+
+
+
+
+                    /*     HEADER, FOOTER ym. MUOTOILUT     */
+
+.btn-primary {
+    background-color: white;
+    border-color: var(--teksti);
+    color: var(--teksti);
+}
+
+.btn-primary:active {
+    background-color: lightgray !important;
+    border-color: var(--teksti) !important;
+    color: var(--tausta) !important;
+}
+
+
+header {
+    display: none;
+}
+
+footer {
+    display: none;
+}
+
+
+
+
+                    /*     PELIALUEEN POHJAMUOTOILUT     */
+}

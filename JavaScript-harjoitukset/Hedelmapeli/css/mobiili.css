@@ -1,0 +1,573 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@1,700&display=swap');
+@media screen and (max-width: 1023px) and (orientation: portrait) {
+
+    :root {
+        --teksti: #333333;
+        --tausta: #f6e1f8;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        font-family: 'Poppins', 'sans-serif';
+        background-color: var(--tausta);
+        color: var(--teksti);
+    }
+
+    .btn-primary {
+        background-color: white;
+        border-color: var(--teksti);
+        color: var(--teksti);
+    }
+
+    .btn-primary:active {
+        background-color: lightgray !important;
+        border-color: var(--teksti) !important;
+        color: var(--tausta) !important;
+    }
+
+    .pc {
+        display: none;
+    }
+
+    .mobiiliVaaka {
+        display: none;
+    }
+
+    .pelialue {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        box-shadow: 30px 30px 10px rgba(0, 0, 0, 0.4);
+        background-color: white;
+        border-color: lightgray;
+        border-style: outset;
+        border-width: 4px;
+        text-align: center;
+        height: 200px;
+        width: 90%;
+        padding: 0;
+        background-size: cover;
+        background-position: center;
+    }
+
+    main {
+        flex-grow: 1;
+        padding: 2px;
+    }
+
+    header {
+        display: none;
+    }
+
+    footer {
+        display: none;
+    }
+
+    .footer-mobiili {
+        position: fixed;
+        bottom: 0;
+    }
+
+    h1{
+        margin-top: 10px;
+    }
+
+    .fontti {
+        background: linear-gradient(to right, red, rgb(241, 159, 8), red);
+        -webkit-background-clip: text;
+        font-family: 'Comic Neue';
+        font-weight: bolder;
+        background-clip: text;
+        color: transparent;
+    }
+
+    .fonttiValkoinen {
+        background: var(--tausta);
+        -webkit-background-clip: text;
+        font-family: 'Comic Neue';
+        font-weight: bolder;
+        background-clip: text;
+        color: transparent;
+    }
+
+}
+
+
+
+
+@media screen and (max-width: 1023px) and (orientation: landscape) {
+
+/*     PÄÄMUOTOILUT     */
+
+:root {
+    --teksti: #333333;
+    --tausta: #f6e1f8;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Poppins', 'sans-serif';
+    background-color: var(--tausta);
+    color: var(--teksti);
+}
+
+main {
+    flex-grow: 1;
+    padding: 2px;
+}
+
+.row {
+    padding: 10px;
+}
+
+h1{
+    margin-bottom: 30px;
+}
+
+.mobiiliPysty {
+    display: none;
+}
+
+.fontti {
+    background: linear-gradient(to right, red, rgb(241, 159, 8), red);
+    -webkit-background-clip: text;
+    font-family: 'Comic Neue';
+    font-weight: bolder;
+    background-clip: text;
+    color: transparent;
+}
+
+
+
+
+/*     HEADER, FOOTER ym. MUOTOILUT     */
+
+.btn-primary {
+    background-color: white;
+    border-color: var(--teksti);
+    color: var(--teksti);
+}
+
+.btn-primary:active {
+    background-color: lightgray !important;
+    border-color: var(--teksti) !important;
+    color: var(--tausta) !important;
+}
+
+
+header {
+    display: none;
+}
+
+footer {
+    display: none;
+}
+
+
+
+
+/*     PELIALUEEN POHJAMUOTOILUT     */
+
+.pelialue {
+    box-shadow: 30px 30px 10px rgba(0, 0, 0, 0.4);
+    margin-top: -7vh;
+    margin-bottom: 2vh;
+    background-color: white;
+    border-color: lightgray;
+    border-style: outset;
+    border-width: 6px;
+    text-align: center;
+    height: 440px;
+    width: 100%;
+    padding: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.voittotaulukkoMobiili {
+    width: 90%;
+    height: auto;
+    margin-top:2.5vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.voittotaulukkoDesktop {
+    display: none;
+}
+
+
+.coinbox {
+    padding: 0;
+    height: 40vh;
+}
+
+
+.tulosruutu {
+    width: 100%;
+    height: auto;
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    margin-top: 2.5vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tulosruutu img {
+    margin-top: -12px;
+    width: 10px;
+}
+
+
+#winMobiili {
+    width: 400px;
+    position: absolute;
+    top: 18vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+
+/*     VIESTIEN MUOTOILUT     */
+
+.viesti {
+    font-size: 18px;
+    text-align: center;
+}
+
+
+#ohjeLaatikko {
+    height: 250px;
+    overflow-y: auto;
+    border-style: solid;
+    border-width: 5px;
+    border-color: navy;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: auto;
+    background-color: lightskyblue;
+    padding: 10px;
+    text-align: left;
+    display: none;
+}
+
+#ohjeLaatikko #sulje {
+    cursor: pointer;
+    float: right;
+    font-weight: bold;
+    width: 25px;
+    height: 25px;
+}
+
+
+#voittotalletus {
+    height: 250px;
+    overflow-y: auto;
+    border-style: solid;
+    border-width: 5px;
+    border-color: navy;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: auto;
+    background-color: lightskyblue;
+    padding: 10px;
+    text-align: left;
+    display: none;
+}
+
+#voittotalletusUusiPeli {
+    display: none;
+}
+
+#voittotalletusSulje {
+    display: none;
+}
+
+
+#peliLoppu {
+    height: 250px;
+    overflow-y: auto;
+    border-style: solid;
+    border-width: 5px;
+    border-color: navy;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: auto;
+    background-color: lightskyblue;
+    padding: 10px;
+    text-align: left;
+    display: none;
+}
+
+
+
+
+/*     KELAT     */
+
+.kelat {
+    height: 19vh;
+    margin-top: 23.85vh;
+    background-size: contain;
+}
+
+.kelat img {
+    width: 37px;
+    height: 80px;
+}
+
+#ekaKela {
+    margin-left: 25.4%;
+    margin-right: -14.85%;
+}
+#tokaKela {
+    margin-right: -14.85%;
+}
+#kolmasKela {
+    margin-right: -15.05%;
+}
+#neljasKela {
+    margin-right: 10.05%;
+}
+
+
+
+
+/*     PAINIKKEIDEN MUOTOILUT     */
+
+.nappulat {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 22vh;
+    margin-top: -4vh;
+}
+
+.nappula-alue {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    height: 50%;
+}
+
+
+/* PANOS */
+
+.panos {
+    width: 55px;
+    margin-left: -2vw;
+    margin-right: auto;
+}
+
+#panosPainike:active {
+    zoom: 0.9;
+    margin-left: -2vw;
+    margin-right: 0.7vw;
+    margin-top: 0.5vh;
+}
+
+
+/* KÄYNNISTYS */
+
+.divStartNappi {
+    margin-right: 6vw;
+}
+
+.startNappi {
+    width: 55px
+}
+
+#kaynnista:active {
+    zoom: 0.9;
+    margin-left: 1vw;
+    margin-top: 0.5vh;
+    margin-bottom: 0.1vh;
+}
+
+
+/* OHJE */
+
+.ohje {
+    margin-left: 6vw;
+    margin-left: auto;
+    width: 55px
+}
+
+#ohjepainike:active {
+    zoom: 0.9;
+    margin-top: 0.5vh;
+    margin-bottom: 0.1vh;
+    margin-right: 0.7vw;
+}
+
+
+/* VOITONMAKSU */
+
+.voitonmaksu {
+    width: 55px;
+    margin-left: 6vw;
+}
+
+#voitonmaksupainike:active {
+    zoom: 0.9;
+    margin-top: 0.5vh;
+    margin-bottom: 0.1vh;
+    margin-left: 8vw;
+    margin-right: -0.45vw;
+}
+
+
+/* LUKITUS */
+
+.lukot img {
+    width: 55px;
+}
+
+    /* Lukko 1 */
+
+#lukko1 {
+    margin-left: -2vw;
+    margin-right: auto;
+}
+
+#lukko1:active {
+    zoom: 0.9;
+    margin-top: 0.5vh;
+    margin-bottom: 0.1vh;
+    margin-left: -2vw;
+    margin-right: 0.7vw;
+}
+
+    /* Lukko 2 */
+
+#lukko2 {
+    margin-left: -2vw;
+    margin-right: auto;
+}
+
+#lukko2:active {
+    zoom: 0.9;
+    margin-top: 0.5vh;
+    margin-bottom: 0.1vh;
+    margin-left: -2vw;
+    margin-right: 0.7vw;
+}
+
+    /* Lukko 3 */
+
+#lukko3 {
+    margin-left: -2vw;
+    margin-right: auto;
+}
+
+#lukko3:active {
+    zoom: 0.9;
+    margin-top: 0.5vh;
+    margin-bottom: 0.1vh;
+    margin-left: -2vw;
+    margin-right: 0.7vw;
+}
+
+    /* Lukko 4 */
+    
+#lukko4 {
+    margin-left: -2vw;
+    margin-right: auto;
+}
+
+#lukko4:active {
+    zoom: 0.9;
+    margin-top: 0.5vh;
+    margin-bottom: 0.1vh;
+    margin-left: -2vw;
+    margin-right: 0.7vw;
+}
+
+
+/* TYHJÄT */
+
+.ekaTyhjaVali {
+    width: 55px;
+    margin-right: 1.75vw;
+}
+
+.tokaTyhjaVali {
+    width: 55px;
+}
+
+.kolmasTyhjaVali {
+    width: 55px;
+    margin-left: 1.75vw;
+}
+
+
+/*     SALDONÄYTTÖ     */
+
+/* PANOS */
+
+#panosEkaNro {
+    margin-left: 0px;
+}
+#panosTokaNro {
+    margin-left: 4px;
+}
+
+
+/* VIIMEISIN VOITTO */
+
+#viimVoittoEkaNro {
+    margin-left: -29px;
+}
+#viimVoittoTokaNro {
+    margin-left: 4px;
+}
+#viimVoittoKolmasNro {
+    margin-left: 4px;
+}
+
+
+/* VOITOT */
+
+#voitotEkaNro {
+    margin-left: -8px;
+}
+#voitotTokaNro {
+    margin-left: 4px;
+}
+#voitotKolmasNro {
+    margin-left: 4px;
+}
+
+
+/* PELIVARAUKSET */
+
+#varauksetEkaNro {
+    margin-left: -4px;
+}
+#varauksetTokaNro {
+    margin-left: 4px;
+}
+}

@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@media screen and (min-width: 1024px) {
+
+    :root {
+        --teksti: #333333;
+        --tausta: #f6e1f8;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        font-family: 'Poppins', 'sans-serif';
+        background-color: var(--tausta);
+        color: var(--teksti);
+    }
+
+    main {
+        flex-grow: 1;
+        padding: 20px;
+    }
+
+    .varjo {
+        box-shadow: 30px 30px 10px rgba(0, 0, 0, 0.4);
+    }
+
+
+    .lomake {
+        background-color: white;
+        max-width: 100%;
+        height: auto;
+        align-content: center;
+        border-style: outset;
+        border-width: 8px;
+        border-color: rgb(250, 228, 232);
+        padding: 20px;
+    }
+
+    
+    .lomakeBoksi {
+        width: 50vw;
+    }
+
+    .col-md-2 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }    
+
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    label {
+        margin-bottom: 20px;
+    }
+
+    textarea {
+        width: 20vw;
+        margin-bottom: 20px;
+        margin-left: 2vw;
+    }
+
+    input {
+        width: 20vw;
+        align-content: center;
+        margin-left: 2vw;
+    }
+
+    .fontti {
+        font-size: 14px;
+        color: darkgray;
+        font-style: italic;
+    }
+
+    .marginaali {
+        margin-right: -8vw;
+    }
+}      
